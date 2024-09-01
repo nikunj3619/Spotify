@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+*{
+    margin: 0%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.left {
+    width: 25%;
+    height: 100%;
+}
+
+.right {
+    width: 75%;
+    height: 100vh;
+}
+
+.first {
+    margin: 10px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: #141414;
+    border-radius: 5px;
+}
+.logo {
+    width: 85px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.size-logo-child {
+    width: 30px;
+}
+
+.home {
+    width: 25px;
+    margin-left: 25px;
+    align-items: center;
+
+}
+
+.logo-name {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 20px;
+
+}
+.library{
+    width: 25px;
+    margin-left: 30px;
+    align-items: center;
+    
+}
+.lib{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    gap: 15px;
+    padding-top: 20px;
+}
+.second{
+    height: 70%;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #141414;
+    border-radius: 5px;
+}
+.header{
+    height: 80px;
+    background-color: rgb(13, 48, 78);
+    padding-left: 20px;
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 14px;
+    margin-right: 10px;
+}
+.arrow-left{
+    width: 20px;
+    margin-right: 20px;
+}
+.arrow-right{
+    width: 20px;
+}
+.login{
+    color: black;
+    border-radius: 30px;
+    width: 125px;
+    height: 60px;
+    background-color: white;
+    margin-right: 50px;
+    margin-left: 35px;
+}
+.sign-up{
+    background-color: #141414;
+    border: none;
+}
+.content{
+    background: linear-gradient(to bottom, #232323 5%, #141414 95%);
+    height: 85%;
+    margin-right: 10px;
+    border-radius: 0px 0px 8px 8px;
+    overflow-y: scroll;
+}
+.head{
+    margin-left: 20px;
+    padding-top: 5px;
+    font-size: 20px;
+}
+.card-img{
+    width: 180px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.card-bg{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 0px 20px; 
+    border-radius: 5px;
+    background-color: #232222;
+    flex-wrap: wrap;
+    
+}
+.card-desc{
+    margin-left: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.card-name{
+    margin-left: 10px;
+}
+.cards{
+    display: flex;
+    justify-content: left;
+}
+.card-bg:hover{
+    background-color: #373636;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.play{
+    width: 40px;
+    position: absolute;
+    margin: 140px;
+    opacity: 0;
+}
+.play:hover{
+    opacity:2;
+    transition: ease-out 10s;
+}
+.playbar-bg{
+    /* border: 1px solid yellow; */
+    background-color: #312f2f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:130px;
+    width: 1080px;
+    margin-left: 20px;
+    border-radius: 8px;
+    margin-top: 130px;
+}
+.playbar{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.lib-songs{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    height: 400px;
+    word-wrap: break-word;
+    list-style: none;
+    overflow: scroll;
+    overflow-x:hidden;
+    cursor: pointer;
+}
+.lib-songs > li{
+    width: 300px;
+    padding-left: 30px;
+    padding-top: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+}
+.seekbar{
+    
+    width: 98%;
+    height: 1px;
+    border: 0.5px solid white;
+    position: relative;
+}
+.dot{
+    position: absolute;
+    border: 0.1px solid white;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    top: -5px;
+    background-color: antiquewhite;
+    left: 0%;
+    transition: all 0.5s;
+}
+.song-info{
+    margin-bottom: 10px;
+}
+.timing{
+    margin-top: 10px;
+}

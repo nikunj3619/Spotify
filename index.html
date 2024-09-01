@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="wrapper flex">
+
+        <div class="left">
+
+            <div class="first">
+                <div>
+                    <img src="logo.svg" class="logo invert" alt="logo">
+                </div>
+
+                <div class="contents">
+                    <div class="logo-name">
+                        <div><img src="home.svg" class="invert home" alt="home-logo"></div>
+                        <div>Home</div>
+                    </div>
+
+                    <div class="logo-name">
+                        <div><img src="search.svg" class="invert home" alt="search-logo"></div>
+                        <div>Search</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="second">
+                <div class="lib">
+                    <img src="library.svg" class="invert library" alt="library">
+                    <p>Your Library</p>
+
+                </div>
+                <div class="lib-songs">
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="header flex">
+                <div>
+                    <img src="left.svg" class="invert arrow-left" alt="left-arrow">
+                    <img src="right.svg" class="invert arrow-right" alt="right-arrow">
+                </div>
+                <div>
+                    <button class="sign-up">Sign up</button>
+                    <button class="login">Log in</button>
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="head">Spotify Playlists</h3>
+
+                <div class="cards">
+                    <div class="card-bg">
+                        <img class="card-img" src="https://i.scdn.co/image/ab67706f00000002ce8e89604efb1f3122f31023"
+                            alt="">
+                        <img class="play" src="play-button.png" alt="">
+                        <h3 class="card-name">lofi chill</h3>
+                        <p class="card-desc">Lazy slow lofi beats for laid-back moments.</p>
+                    </div>
+                    <div class="card-bg">
+                        <img class="card-img" src="https://i.scdn.co/image/ab67706f00000002ce8e89604efb1f3122f31023"
+                            alt="">
+                        <h3 class="card-name">lofi chill</h3>
+                        <p class="card-desc">Lazy slow lofi beats for laid-back moments.</p>
+                    </div>
+                    <div class="card-bg">
+                        <img class="card-img" src="https://i.scdn.co/image/ab67706f00000002ce8e89604efb1f3122f31023"
+                            alt="">
+                        <h3 class="card-name">lofi chill</h3>
+                        <p class="card-desc">Lazy slow lofi beats for laid-back moments.</p>
+                    </div>
+                    <div class="card-bg">
+                        <img class="card-img" src="https://i.scdn.co/image/ab67706f00000002ce8e89604efb1f3122f31023"
+                            alt="">
+                        <h3 class="card-name">lofi chill</h3>
+                        <p class="card-desc">Lazy slow lofi beats for laid-back moments.</p>
+                    </div>
+                    <div class="card-bg">
+                        <img class="card-img" src="https://i.scdn.co/image/ab67706f00000002ce8e89604efb1f3122f31023"
+                            alt="">
+                        <h3 class="card-name">lofi chill</h3>
+                        <p class="card-desc">Lazy slow lofi beats for laid-back moments.</p>
+                    </div>
+                </div>
+                <div class="playbar-bg">
+                    <div class="song-info">
+                        <p></p>
+                    </div>
+                    <div class="seekbar">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="timing">
+                        <span class="pre">
+                            00:00 
+                        </span>
+                        <span>/</span>
+                        <span class="post">
+                            00:00 
+                        </span>
+                    </div>
+                   
+                   
+                    <div class="playbar">
+                        <img class="invert" id="previous" src="previous.svg" alt="">
+                        <img onclick="playpause()" id="play" class="invert" src="play.svg" alt="">
+                        <img onclick="nextSong()" id="next" class="invert" src="next.svg" alt="">
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

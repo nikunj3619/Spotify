@@ -1,0 +1,29 @@
+
+
+.bg-black{
+    background-color: black;
+}
+
+.bg-grey{
+    background-color: #b3b3b3;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.border{
+    border: 2px solid yellow;
+}
+.invert{
+    filter: invert(1);
+}
+.margin-left{
+    margin-left: 15px;
+}
+.margin-top{
+    margin-top: 15px;
+}
+.header-btn{
+    width: 100px;
+    border-radius: 10%;
+}
