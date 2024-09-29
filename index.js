@@ -125,13 +125,73 @@ async function main() {
 
 
     })
-
+    function selectCard(songName) {
+        document.getElementById('current-song').innerText = songName; // Update the playbar with the selected song name
+    }
 
 
 }
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+function validateLogin() {
+    const email = document.getElementById('login-email').value;
+    const password = document.getElementById('login-password').value;
+    if (email && password) {
+        alert("Login successful!");
+        closeModal('loginModal');
+        return false; // Prevent form submission for demonstration
+    }
+    return false;
+}
+
+function validateSignup() {
+    const name = document.getElementById('signup-name').value;
+    const email = document.getElementById('signup-email').value;
+    const password = document.getElementById('signup-password').value;
+    if (name && email && password) {
+        alert("Signup successful!");
+        closeModal('signupModal');
+        return false; // Prevent form submission for demonstration
+    }
+    return false;
+}
+
+// Close modal if clicked outside
+window.onclick = function(event) {
+    const modals = ['loginModal', 'signupModal'];
+    modals.forEach(modalId => {
+        if (event.target == document.getElementById(modalId)) {
+            closeModal(modalId);
+        }
+    });
+}
+function openLanguageModal() {
+    document.getElementById('languageModal').style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+function setLanguage(lang) {
+    document.getElementById('language-button').innerText = lang;
+    closeModal('languageModal');
+}
+
+// Close modal if clicked outside
+window.onclick = function (event) {
+    if (event.target == document.getElementById('languageModal')) {
+        closeModal('languageModal');
+    }
+}
+function selectCard(songName, description) {
+    document.getElementById('current-song').innerText = songName;
+    document.getElementById('current-description').innerText = description;
+}
 main()
-
-
-
-
-
