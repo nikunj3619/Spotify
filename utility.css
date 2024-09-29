@@ -1,29 +1,57 @@
+/* Utility Classes */
 
-
-.bg-black{
-    background-color: black;
+/* Background Colors */
+.bg-black {
+    background-color: rgb(0, 0, 0);
 }
 
-.bg-grey{
-    background-color: #b3b3b3;
+.bg-grey {
+    background-color: #ffffff;
 }
-.flex{
+
+/* Flexbox Utilities */
+.flex {
     display: flex;
+}
+
+.flex-row {
     flex-direction: row;
 }
-.border{
-    border: 2px solid yellow;
+
+.flex-column {
+    flex-direction: column;
 }
-.invert{
+
+/* Alignment Utilities */
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* Borders */
+.border {
+    border: 2px solid rgb(255, 255, 0);
+}
+
+/* Inversion */
+.invert {
     filter: invert(1);
 }
-.margin-left{
+
+/* Margin Utilities */
+.m-l-15 {
     margin-left: 15px;
 }
-.margin-top{
+
+.m-t-15 {
     margin-top: 15px;
 }
-.header-btn{
+
+/* Button Styles */
+.header-btn {
     width: 100px;
     border-radius: 10%;
 }
