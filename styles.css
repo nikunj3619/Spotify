@@ -3,7 +3,7 @@
 
 *{
     margin: 0%;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
 
 }
@@ -15,7 +15,7 @@ body {
 .wrapper {
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: rgb(3, 3, 3);
 }
 
 .left {
@@ -35,7 +35,7 @@ body {
     height: 25%;
     display: flex;
     flex-direction: column;
-    background-color: #141414;
+    background-color: #044d7b;
     border-radius: 5px;
 }
 .logo {
@@ -81,14 +81,14 @@ body {
     margin-top: 0px;
     margin-left: 10px;
     margin-right: 10px;
-    background-color: #141414;
+    background-color: #40c876;
     border-radius: 5px;
 }
 .header{
     height: 80px;
-    background-color: rgb(13, 48, 78);
+    background-color: rgb(13, 73, 78);
     padding-left: 20px;
-    background-color: #141414;
+    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,7 +104,7 @@ body {
     width: 20px;
 }
 .login{
-    color: black;
+    color: rgb(0, 0, 0);
     border-radius: 30px;
     width: 125px;
     height: 60px;
@@ -117,10 +117,10 @@ body {
     border: none;
 }
 .content{
-    background: linear-gradient(to bottom, #232323 5%, #141414 95%);
+    background: linear-gradient(to bottom, #ff2424 5%, #000000 95%);
     height: 85%;
     margin-right: 10px;
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
     overflow-y: scroll;
 }
 .head{
@@ -140,7 +140,7 @@ body {
     flex-direction: column;
     margin: 20px 0px 0px 20px; 
     border-radius: 5px;
-    background-color: #232222;
+    background-color: #55047a;
     flex-wrap: wrap;
     
 }
@@ -157,7 +157,7 @@ body {
     justify-content: left;
 }
 .card-bg:hover{
-    background-color: #373636;
+    background-color: #37bbef;
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -172,23 +172,43 @@ body {
     transition: ease-out 10s;
 }
 .playbar-bg{
-    /* border: 1px solid yellow; */
-    background-color: #312f2f;
+    background: linear-gradient(to bottom, #06436c 5%, #ff6200 95%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:130px;
+    height:180px;
     width: 1080px;
     margin-left: 20px;
     border-radius: 8px;
-    margin-top: 130px;
+    margin-top: 90px;
+    
+}
+.song-info {
+    flex: 1;
+    text-align: center;
+}
+
+.song-info p {
+    margin: 0;
+}
+
+#current-song {
+    font-size: 24px; /* Larger font size for the song name */
+    font-weight: bold; /* Optional: Make it bold */
+    color: #000000;
+}
+
+#current-description {
+    font-size: 16px; /* Smaller font size for the description */
+    color: #242424;
 }
 .playbar{
     display: flex;
     gap: 20px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 .lib-songs{
     margin-top: 20px;
@@ -211,7 +231,7 @@ body {
 }
 .seekbar{
     
-    width: 98%;
+    width: 70%;
     height: 1px;
     border: 0.5px solid white;
     position: relative;
@@ -228,8 +248,90 @@ body {
     transition: all 0.5s;
 }
 .song-info{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .timing{
     margin-top: 10px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Adjust margin to position vertically */
+    padding: 20px;
+    border: 1px solid #000000;
+    width: 300px; /* Set a fixed width for the modals */
+    border-radius: 25px; /* Optional: add rounded corners */
+    color: #000000;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    color: #000000;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #000000;
+    width: 300px; /* Width of the modal */
+    color: #000000;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#loginb {
+    padding: 10px 20px; /* Adjust padding for a better look */
+    font-size: 18px; /* Font size */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Primary color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.1s; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 10px;
+}
+
+#loginb:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+#loginb:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow */
+}
+
+#signupb {
+    padding: 10px 20px; /* Adjust padding for a better look */
+    font-size: 18px; /* Font size */
+    color: #fff; /* Text color */
+    background-color: #008017; /* Primary color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.1s; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 10px;
+}
+
+#signupb:hover {
+    background-color: #0000b3; /* Darker shade on hover */
+}
+
+#signupb:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow */
 }
