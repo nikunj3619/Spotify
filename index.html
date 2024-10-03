@@ -119,6 +119,7 @@
                 <div>
                     <img src="left.svg" class="invert arrow-left" alt="left-arrow">
                     <img src="right.svg" class="invert arrow-right" alt="right-arrow">
+                    <span id="element" style="color: white; padding: 0 0 10px 40px;"></span>
                 </div>
                 <div>
                     <button onclick="openModal('signupModal')" class="sign-up">Sign up</button>
@@ -217,6 +218,15 @@
             <button onclick="setLanguage('Русский')">Russian Русский</button>
         </div>
     </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['HEY THERE', 'READY TO DISCOVER NEW MUSIC','HERE ARE SOME PLAYLISTS FOR YOU'],
+          typeSpeed: 30,
+          loop: true,
+          backDelay: 2000,
+        });
+      </script>
 
     <script src="index.js">
     </script>
